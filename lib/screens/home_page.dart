@@ -12,6 +12,7 @@ class HomePage extends StatelessWidget {
           child: Text('flutter app'),
         ),
       ),
+      drawer: Drawer(),
     );
   }
 }
