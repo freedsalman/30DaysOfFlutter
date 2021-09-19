@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_catalog/utilis/routes.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -8,8 +9,19 @@ class HomePage extends StatelessWidget {
         title: Text("catalog app"),
       ),
       body: Center(
-        child: Container(
-          child: Text('flutter app'),
+        child: Column(
+          children: [
+            Container(
+              child: Text('flutter app'),
+            ),
+            FlatButton(
+              child: Text("Login", style: TextStyle(color: Colors.white)),
+              color: Colors.blue,
+              onPressed: () {
+                Navigator.pushNamed(context, MyRoutes.loginRoute);
+              },
+            )
+          ],
         ),
       ),
       drawer: Drawer(),
