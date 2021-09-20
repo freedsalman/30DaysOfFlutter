@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_catalog/utilis/routes.dart';
 
 class MyDrawer extends StatelessWidget {
   @override
@@ -50,6 +51,9 @@ class MyDrawer extends StatelessWidget {
               ),
             ),
             ListTile(
+              onTap: () {
+                Navigator.pushNamed(context, MyRoutes.loginRoute);
+              },
               leading: Icon(
                 CupertinoIcons.mail,
                 color: Colors.white,
