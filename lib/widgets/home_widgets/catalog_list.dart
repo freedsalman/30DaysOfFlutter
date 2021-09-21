@@ -62,11 +62,11 @@ class CatalogItem extends StatelessWidget {
                 children: [
                   "\$${catalog.price}".text.bold.xl.make(),
                   RaisedButton(
+                    color: Colors.black87,
                     child: Text(
                       "buy",
                       style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: Colors.deepPurpleAccent),
+                          fontWeight: FontWeight.bold, color: Colors.white),
                     ),
                     onPressed: () {},
                   )

@@ -22,10 +22,11 @@ class HomeDetailPage extends StatelessWidget {
           children: [
             "\$${catalog.price}".text.bold.xl4.red800.make(),
             RaisedButton(
+              color: Colors.black87,
               child: Text(
                 "buy",
-                style: TextStyle(
-                    fontWeight: FontWeight.bold, color: Colors.blueGrey),
+                style:
+                    TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
               ),
               onPressed: () {},
             ).wh(100, 50)
