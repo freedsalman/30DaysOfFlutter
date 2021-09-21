@@ -64,7 +64,7 @@ class CatalogItem extends StatelessWidget {
                   RaisedButton(
                     color: Colors.black87,
                     child: Text(
-                      "buy",
+                      "add to cart",
                       style: TextStyle(
                           fontWeight: FontWeight.bold, color: Colors.white),
                     ),
